@@ -13,3 +13,4 @@ RUN apt update; \
     rm -rf ~/bld ~/sqlcipher
 
 ENTRYPOINT ["sqlcipher"]
+CMD ["--help"]
