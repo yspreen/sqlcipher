@@ -11,3 +11,5 @@ RUN apt update; \
     apt remove -y build-essential git gcc g++ make libffi-dev libssl-dev tcl; \
     apt autoremove -y; \
     rm -rf ~/bld ~/sqlcipher
+
+ENTRYPOINT ["sqlcipher"]
